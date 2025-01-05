@@ -99,5 +99,5 @@ The dashboard is divided into the following sections:
 
 For any inquiries or contributions, please reach out to:
 
-- **Your Name**
-- [Your Email](saiemamin708@gmail.com)
+- **Saiem Ahmed Amin**
+- saiemamin708@gmail.com
