@@ -18,29 +18,24 @@ import seaborn as sns
 import pandas as pd
 import kaggle
 
+
 def get_preprocessed_data():
     """
     Fetch, load, and preprocess the dataset.
     Returns a pandas DataFrame.
     """
-    try:
-        # Download the dataset using the Kaggle API
-        kaggle.api.dataset_download_files("dubradave/hospital-readmissions", path=".", unzip=True)
+
 
         # Load the dataset into a pandas DataFrame
-        df = pd.read_csv("hospital_readmissions.csv")
+    df = pd.read_csv("hospital_readmissions.csv")
 
         #Converting categorical values to numerical
         #Coverting readmitted column to identifiers 1/0
-        df["readmitted"] = df["readmitted"].map({"yes":1, "no" : 0})
-        df["diabetes_med"] = df["diabetes_med"].map({"yes": 1, "no": 0})
-        df.head()
+    df["readmitted"] = df["readmitted"].map({"yes":1, "no" : 0})
+    df["diabetes_med"] = df["diabetes_med"].map({"yes": 1, "no": 0})
+    df.head()
 
-        return df  # Return the processed DataFrame
-
-    except Exception as e:
-            print(f"Error occurred while fetching data: {e}")
-            return None
+    return df  # Return the processed DataFrame
 
 
 # In[3]:
