@@ -34,28 +34,8 @@ This project explores healthcare analytics, specifically focusing on hospital re
 - Feature importance plot for Random Forest.
 
 ---
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/hospital-readmissions.git
-   cd hospital-readmissions
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the Streamlit application:
-   ```bash
-   streamlit run frontend.py
-   ```
-
----
+##  Dashboard
+ https://hospital-readmission-prediction-bq6knu6c6ttivx62umg7sk.streamlit.app/
 
 ## Project Structure
 
