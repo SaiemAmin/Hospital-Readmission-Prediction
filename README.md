@@ -1,41 +1,37 @@
 # Hospital-Readmission-Prediction
 
-Healthcare Analytics Dashboard
+## Healthcare Analytics Dashboard
+https://hospital-readmission-prediction-bq6knu6c6ttivx62umg7sk.streamlit.app/
 
-# Hospital Readmissions Analysis and Prediction
+### Overview
+This project focuses on **hospital readmissions** through comprehensive **Exploratory Data Analysis (EDA)** and **Machine Learning** models. Using **Streamlit**, the application provides interactive visualizations, filtering capabilities, and predictive functionalities for healthcare professionals and data enthusiasts alike.
 
-This project explores healthcare analytics, specifically focusing on hospital readmissions. The dataset is analyzed using exploratory data analysis (EDA) and machine learning models, with interactive visualizations and predictions showcased using Streamlit.
+### Project Features
 
-## Project Features
+1. **Exploratory Data Analysis (EDA)**  
+   - **Dynamic Visualizations**: Line plots, bar charts, and pie charts to understand hospital stay durations and readmission rates.  
+   - **Age-Based Filtering**: Interactively select age ranges for targeted insights.
 
-### 1. **Exploratory Data Analysis (EDA)**
+2. **Machine Learning Models**  
+   - **Logistic Regression**: A straightforward classification approach for predicting readmissions.  
+   - **Decision Tree**: An interpretable model with adjustable depth and criterion (Gini or Entropy).  
+   - **Random Forest**: An ensemble method offering feature importance insights.
 
-- Dynamic visualizations such as line plots, bar charts, and pie charts to explore:
-  - Average time spent in the hospital by age group.
-  - Proportion of readmissions.
-- Filtering data dynamically based on age ranges for better insights.
+3. **Interactive Features**  
+   - **Custom Input Parameters**: Provide inpatient, outpatient, emergency visits, and hospital stay duration for on-the-fly predictions.  
+   - **Model Evaluation**: Seamlessly switch between models to compare metrics and results.
 
-### 2. **Machine Learning Models**
+4. **Visualizations**  
+   - **Correlation Heatmap**: Identify relationships among variables.  
+   - **Decision Tree Visualization**: Graphical interpretation of decision splits.  
+   - **ROC Curve**: Evaluate model performance.  
+   - **Feature Importance**: Understand which factors most influence the Random Forest model.
 
-- Logistic Regression: A classification model to predict hospital readmissions.
-- Decision Tree: An interpretable model with adjustable depth and criteria (Gini or Entropy).
-- Random Forest: A robust ensemble model with feature importance analysis.
+### Live Dashboard
+[Hospital-Readmission-Prediction](https://hospital-readmission-prediction-bq6knu6c6ttivx62umg7sk.streamlit.app/)  
 
-### 3. **Interactive Features**
+### Project Structure
 
-- Input custom parameters for predictions (e.g., inpatient visits, outpatient visits, emergency visits, and time in the hospital).
-- Toggle between different machine learning models and their evaluations.
-
-### 4. **Visualizations**
-
-- Heatmaps to show correlation among features.
-- Decision tree visualization.
-- ROC Curve for model evaluation.
-- Feature importance plot for Random Forest.
-
----
-##  Dashboard
- https://hospital-readmission-prediction-bq6knu6c6ttivx62umg7sk.streamlit.app/
 
 ## Project Structure
 
@@ -49,33 +45,24 @@ This project explores healthcare analytics, specifically focusing on hospital re
 
 ---
 
-## Usage
 
-### Dataset
+### Usage
 
-The dataset used is publicly available on Kaggle:
-[Hospital Readmissions Dataset](https://www.kaggle.com/datasets/dubradave/hospital-readmissions)
+1. **Dataset**  
+   - Source: [Hospital Readmissions Dataset (Kaggle)](https://www.kaggle.com/).  
+   - **Features**:  
+     - `n_inpatient`: Number of inpatient visits  
+     - `n_outpatient`: Number of outpatient visits  
+     - `n_emergency`: Number of emergency visits  
+     - `time_in_hospital`: Days spent in hospital  
 
-### Features for Prediction
+2. **Dashboard Sections**  
+   - **Introduction**: EDA overview with interactive age filtering.  
+   - **Logistic Regression**: Model performance, classification reports, and user inputs for prediction.  
+   - **Decision Tree**: Hyperparameter tuning (depth, criterion), tree visualization, and predictions.  
+   - **Random Forest**: Feature importance analysis and prediction interface.
 
-- `n_inpatient`: Number of inpatient visits.
-- `n_outpatient`: Number of outpatient visits.
-- `n_emergency`: Number of emergency visits.
-- `time_in_hospital`: Number of days spent in the hospital.
-
-### Dashboard
-
-The dashboard is divided into the following sections:
-
-1. **Introduction**: Overview of EDA with interactive filtering.
-2. **Logistic Regression**: Model evaluation, classification report, and prediction inputs.
-3. **Decision Tree**: Interactive depth and criterion selection, tree visualization, and predictions.
-4. **Random Forest**: Feature importance visualization and predictions.
-
----
-
-## Key Dependencies
-
+### Key Dependencies
 - `streamlit`
 - `pandas`
 - `numpy`
@@ -83,21 +70,12 @@ The dashboard is divided into the following sections:
 - `matplotlib`
 - `seaborn`
 
----
+### Future Enhancements
+- **Multi-Hospital Analysis**: Incorporate datasets from multiple hospitals.
+- **Additional Models**: Experiment with Gradient Boosting, XGBoost, etc.
+- **Hyperparameter Tuning**: Integrate direct tuning from the dashboard interface.
 
-## Future Enhancements
-
-- Include additional datasets for multi-hospital analysis.
-- Implement additional machine learning models (e.g., Gradient Boosting).
-- Add support for hyperparameter tuning directly from the dashboard.
-
----
-
----
-
-## Contact
-
-For any inquiries or contributions, please reach out to:
-
-- **Saiem Ahmed Amin**
-- saiemamin708@gmail.com
+### Contact
+For questions, feedback, or contributions, please reach out:
+- **Name**: Saiem Ahmed Amin  
+- **Email**: [saiemamin708@gmail.com](mailto:saiemamin708@gmail.com)
